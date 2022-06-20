@@ -1,0 +1,452 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header  #carouselExampleControls, 
+.carousel-item,
+.carousel-inner {
+    height: 100vh;
+}
+ header .carousel-item{
+    background-image: url(../img/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+}
+
+header .carousel-item:nth-child(2){
+    background-image: url(../img//carousel/237125.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+}
+
+header .carousel-item:nth-child(3){
+    background-image: url(../img/luca-bravo-ESkw2ayO2As-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+}
+#Encabezado{
+    position: relative;
+    top:0;
+    left: 0;
+}
+
+
+
+.navbar{
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+
+#carouselExampleIndicators .carousel-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.background-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background: url(../img/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    max-height: 517px;
+}
+
+header .background-image-contact{
+    background-image: url(../img/galeria/lili-kovac-BSQq5dRT_KU-unsplash.jpg);
+
+}
+
+.background-image--gallery {
+    background: url(../img/13.webp);
+    justify-content: center;
+    color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #5a626f;
+    background-blend-mode: multiply;
+    transition-duration: 1000ms;
+}
+
+header .background-image--gallery-2{
+    background-image: url(../img/carousel/1920x1080-px-nature-Yellowstone-National-Park-1088354-wallhere.com.jpg);
+}
+
+.background-image--queHacer {
+    background: url(../img/12.webp);
+    justify-content: center;
+    color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #5a626f;
+    background-blend-mode: multiply;
+}
+
+header .background-image--queHacer-2{
+    background-image: url(../img/12.webp)
+}
+
+.background-image--servicios {
+    background: url(../img/11.webp);
+    justify-content: center;
+    color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #5a626f;
+    background-blend-mode: multiply;
+}
+
+header .background-image--servicios-2{
+    background-image: url(../img/11.webp);
+
+}
+
+
+.form__div {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.125rem;
+    border: 1px solid #3D5100;
+    border-radius: 0.1rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    color: transparent;
+    z-index: 1;
+}
+
+.form__input:focus {
+    color: #000000;
+}
+
+.form__label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 0.25rem;
+    background-color: #fff;
+    color: #80868B;
+    font-size: 1.125rem;
+    transition: 0.3s;
+}
+
+.form__div--area {
+    height: 100px;
+}
+
+.form__input:focus+.form__label {
+    top: -0.5rem;
+    left: 0.8rem;
+    color: #3D5100;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .95s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .section__title{
+    width: max-content;
+  }
+
+  .section__div{
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+
+  .gallery-cont {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  /* MEdia queries para Galería */
+@media screen and (Min-width: 380px) {
+    .gallery-cont {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        grid-auto-rows: 150px;
+    }
+
+    .gallery-item {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(6) {
+        grid-row-start: span 2;
+    }
+}
+
+@media screen and (Min-width: 720px) {
+    .gallery-cont {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        grid-auto-rows: 200px;
+    }
+
+    .gallery-item {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item:nth-child(4) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-item:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(6) {
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
+    .gallery-item:nth-child(9) {
+        grid-row-start: span 2;
+    }
+}
+
+@media screen and (Min-width: 1080px) {
+    .gallery-cont {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+        grid-auto-rows: 300px;
+    }
+}
+
+
+.day-selector__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-selector__header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.day-selector__body {
+    text-align: center;
+}
+
+.day-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, Minmax(200px, 1fr));
+    gap: 4rem;
+    padding: 2em;
+}
+
+.day-card__box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 20em;
+    border: 2px dashed black;
+    position: relative;
+}
+
+.day-card__item {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.day-card__icon {
+    width: 35%;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+    bottom: -3rem;
+}
+
+@media screen and (Min-width: 822px) and (max-width: 1095px) {
+    .day-card__box:last-child {
+        grid-column: 2/3;
+    }
+}
+
+
+.cent, .services-icon__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-icon {
+    position: relative;
+}
+.services-icon__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 30, 56, 0.6);
+    border-radius: 8px;
+    font-family: "Barlow", sans-serif;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.services-icon__overlay:hover {
+    opacity: 1;
+}
+
+.services-icon__title {
+    font-size: clamp(1.33rem, 1.11rem + 1.13vw, 2.12rem);
+    font-weight: 500;
+}
+
+.services-icon__description {
+    font-size: clamp(1rem, 0.86rem + 0.71vw, 1.5rem);
+}
+
+.services-icon__img {
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid black;
+    width: 100%;
+    padding: 2em;
+}
+  
+.services-icon__overlay--v {
+    background: rgba(136, 162, 54, 0.6);
+    color: #000000;
+}
+
+/* Esta animacion de Lluvia se ve en la pagina queHaacer */
+.services-icon__overlay--rain {
+    background: url(../img/rain.png);
+    animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+}
+
+.services-icon__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.services-icon__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.services-icon__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.relleno {
+    display: none;
+}
+
+@media screen and (Min-width: 511px) {
+    .services-list {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-area: lista;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-icon__img {
+        border: 6px solid black;
+    }
+
+    .relleno {
+        display: inline-block;
+        background: #9277AC;
+        height: 10em;
+        width: 10%;
+    }
+}
