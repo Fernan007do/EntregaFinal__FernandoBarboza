@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+h1,h2,h3,h4, .navbar-brand {
+    font-family: 'Roboto Slab', serif;
+}
+
 header  #carouselExampleControls, 
 header .carousel-item,
 header .carousel-inner {
@@ -49,6 +53,11 @@ header .carousel-item:nth-child(3){
     position: absolute;
     width: 100%;
 }
+
+.nav-link{
+    text-transform: uppercase;
+}
+
 
 
 
