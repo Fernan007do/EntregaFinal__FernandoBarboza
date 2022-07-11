@@ -28,18 +28,18 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse col-6" id="navbarNav">
-                <ul class=" col 12 navbar-nav align-items-center" >
-                  <li class="col-3 nav-item">
-                    <a class="nav-link active text-white text-center" href="./pages/galeria.html">Galería</a>
+                <ul class=" col 12 navbar-nav align-items-center barnav" >
+                  <li class="col-3 nav-item item-nav">
+                    <a class="nav-link link-nav  active text-white text-center" href="./pages/galeria.html">Galería</a>
                   </li>
-                  <li class=" col-3 nav-item">
-                    <a class="nav-link text-white text-center" href="./pages/queHacer.html">¿Qué hacer?</a>
+                  <li class=" col-3 nav-item item-nav">
+                    <a class="nav-link link-nav link-nav text-white text-center" href="./pages/queHacer.html">recreación</a>
                   </li>
-                  <li class=" col-3 nav-item">
-                    <a class="nav-link text-white text-center" href="./pages/servicios.html">Servicios</a>
+                  <li class=" col-3 nav-item item-nav">
+                    <a class="nav-link link-nav text-white text-center" href="./pages/servicios.html">Servicios</a>
                   </li>
-                  <li class=" col-3 nav-item">
-                    <a class="nav-link text-white text-center" href="./pages/contacto.html">Contacto</a>
+                  <li class=" col-3 nav-item item-nav">
+                    <a class="nav-link link-nav text-white text-center" href="./pages/contacto.html">Contacto</a>
                   </li>
                   
                 </ul>
@@ -95,6 +95,8 @@
     
     
     <main>
+        <div class="shadow" id="scrollPath"></div>
+        <div id="progressBar"></div>
 
         <section class="container">
             <div class="row p-4">
@@ -122,7 +124,7 @@
     
         <section class="container" id="Fourth">
     
-            <header class="text-center section__div">
+            <header class="text-center section__header">
                 <h2 class="h1 section-title ">Buenos Momentos...</h2>
             </header>
     
@@ -133,10 +135,13 @@
                         descanso. Vas a encontrar intimidad, en un ambiente alejado del ruido, con buenos servicios
                         y calidez en la atención.
                     </p>
-                    <a class="btn btn-outline-dark shadow" href="./pages/galeria.html">VER MÁS</a>
+                    <a class="my-button shadow" href="./pages/galeria.html">
+                        <span class="my-button__content-1">Ver más</span>
+                        <span class="my-button__content-1">Ver más</span>
+                    </a>
                 </div>
                 <div class="p-4 col-lg-7 d-flex align-items-center ">
-                    <div id="carouselExampleIndicators" class="carousel slide p-4 shadow" data-bs-ride="true">
+                    <div id="carouselExampleIndicators" class="carousel slide p-2 shadow" data-bs-ride="true">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -183,59 +188,63 @@
         <!-- SECCIÓN DE OPINIONES 5TA -->
         <!-- OPINIONES CON LINK E ICONOS (Creo que puede ir <article>) -->
         <section class="container" id="Opiniones">
-            <header class=" section__div">
-                <h2 class="h1 mb-4 text-shadow section-title ">Opiniones</h2>
+            <header class=" section__header">
+                <h2 class="h1 mt-4 mb-0 text-shadow section-title ">Opiniones</h2>
             </header>
     
-            <div class=" row container mt-4 ">
-                <div class="col-12 col-sm-6 col-lg-4 pb-3 ">
-                    <div class="card shadow p-3 text-center h-100 ">
-                        <div class="">
-                            <a class="" href="https://www.facebook.com/" target="_blank"><img src="./img/icons8-facebook.svg"
-                                    alt="iconoFacebook"></a>
-                        </div>
-                        <div class="h-100 d-flex flex-column justify-content-between">
-                            <p class="fs-5">
-                                "Hermoso el lugar, muy tranquilo, muy limpio, confortable, y la pileta climatizada muy
-                                recomendable. El servicio de desayuno es excelente, y el personal que atiende muy
-                                agradable. Gracias por recibirnos tan bien."
-                            </p>
-                            <p class="text-end">-El Juancho</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 pb-3 ">
-                    <div class="card shadow p-3 text-center h-100">
-                        <div class="">
-                            <a class="" href="https://www.tripadvisor.com.ar/" target="_blank"><img
-                                    src="./img/icons8-tripadvisor.svg" alt="iconoTripadvisor"></a>
-                        </div>
-                        <div class="d-flex flex-column justify-content-between h-100" >
-                            <p class="fs-5">
-                                "Excelente atención en un lugar apacible y cuidado con todos los detalles para una
-                                estadía ideal para descansar. Las cabañas son confortables y la decoración súper
-                                cuidada."
-                            </p>
-                            <p class="text-end">-Martina Miranda</p>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-lg-4 pb-4 ">
+                        <div class="card shadow p-3 text-center h-100 ">
+                            <div>
+                                <a href="https://www.facebook.com/" target="_blank"><img src="./img/icons8-facebook.svg"
+                                        alt="iconoFacebook"></a>
+                            </div>
+                            <div class="h-100 d-flex flex-column justify-content-between">
+                                <p class="fs-5">
+                                    "Hermoso el lugar, muy tranquilo, muy limpio, confortable, y la pileta climatizada muy
+                                    recomendable. El servicio de desayuno es excelente, y el personal que atiende muy
+                                    agradable. Gracias por recibirnos tan bien."
+                                </p>
+                                <p class="text-end">-El Juancho</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4 pb-3  ">
-                    <div class="card shadow p-3 text-center h-100">
-                        <div class="">
-                            <a class="" href="https://www.google.com/maps" target="_blank"><img
-                                    src="./img/icons8-google-maps.svg" alt="iconoMaps"></a>
-                        </div>
-                        <div class="d-flex flex-column justify-content-between">
-                            <p class="fs-5">
-                                "¡Excelente las instalaciones y el servicio! El personal con una gran predisposición y
-                                profesionalismo, siempre atentos a satisfacer cada uno de nuestros pedidos. Gracias,
-                                ¡definitivamente volveremos a elegirlos!"
-                            </p>
-                            <p class="text-end">-Juana Nüremberg</p>
+                    <div class="col-12 col-sm-6 col-lg-4 pb-4 ">
+                        <div class="card shadow p-3 text-center h-100">
+                            <div>
+                                <a href="https://www.tripadvisor.com.ar/" target="_blank"><img
+                                        src="./img/icons8-tripadvisor.svg" alt="iconoTripadvisor"></a>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100" >
+                                <p class="fs-5">
+                                    "Excelente atención en un lugar apacible y cuidado con todos los detalles para una
+                                    estadía ideal para descansar. Las cabañas son confortables y la decoración súper
+                                    cuidada."
+                                </p>
+                                <p class="text-end">-Martina Miranda</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-4 pb-4  ">
+                        <div class="card shadow p-3 text-center h-100">
+                            <div>
+                                <a href="https://www.google.com/maps" target="_blank"><img
+                                        src="./img/icons8-google-maps.svg" alt="iconoMaps"></a>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between">
+                                <p class="fs-5">
+                                    "¡Excelente las instalaciones y el servicio! El personal con una gran predisposición y
+                                    profesionalismo, siempre atentos a satisfacer cada uno de nuestros pedidos. Gracias,
+                                    ¡definitivamente volveremos a elegirlos!"
+                                </p>
+                                <p class="text-end">-Juana Nüremberg</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
     
         </section>
@@ -274,7 +283,7 @@
         <!-- SÉPTIMA SECCIÓN -->
         <!-- ESTA SECCIÓN DE CONTACTO ES MÁS CHICA, PERO LA PAGINA DESTINADA TIENE MÁS DETALLES, MUAJAJA -->
         <section class="container" id="Contact-us">
-            <div class="section__div">
+            <div class="section__header">
                 <h2 class="h1 section-title mb-4 mt-4">¿En qué te podemos ayudar?</h2>  
             </div>
 
@@ -291,39 +300,30 @@
                         </p>
                     </div>
         
-                    <div class="">
+                    <div>
                         <!-- FORMULARIO -->
-                        <form class="p-4" >
-        
-                            <div class="form__div">
-                                <input type="text" class="form__input">
-                                <label class="form__label">Nombre</label>
+                        <form class="p-4" id="formulario" >
+                            <div class="form">
+                                <div class="form__group">
+                                    <input type="text" name="nombre" id="name" required><span class="barra"></span>
+                                    <label>Nombre</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" name="apellido" id="lastName" required><span class="barra"></span>
+                                    <label>Apellido</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" name="email" id="email" required><span class="barra"></span>
+                                    <label>E-mail</label>
+                                </div>
+                                <div class="form__group">
+                                    <textarea name="" id="" cols="30" rows="5"></textarea><span class="barra"></span>
+                                    <label>Su mensaje:</label>
+                                </div>
+
+                                <button class="form__button btn btn-outline-secondary" type="submit">Enviar</button>
                             </div>
-        
-                            <div class="form__div">
-                                <input type="text" class="form__input">
-                                <label class="form__label">Apellido</label>
-                            </div>
-        
-                            <div class="form__div">
-                                <input type="email" class="form__input">
-                                <label class="form__label">E-mail</label>
-                            </div>
-        
-                            <div class=" form__div form__div--area">
-                                <textarea class="form__input"></textarea>
-                                <label class="form__label">Su mensaje</label>
-                            </div>
-        
-                            <div class="form__checkbox">
-                                <input type="checkbox" value="yes" checked>Quiero suscribirme to the newsletter
-                            </div>
-                            <div>
-                                <input class="bot bot--form" type="reset" value="Borrar Todo">
-                            </div>
-                            <div>
-                                <input class="bot bot--form" type="submit" value="Enviar">
-                            </div>
+
                         </form>
                     </div>
         
@@ -346,28 +346,75 @@
     </main>
     
     <!-- PIÉ DE PÁGINA -->
-    <footer class=" bg-secondary pt-2 pb-1 container-fluid">
-        <div class="d-flex flex-column align-items-center">
-            <h4 class="text-white">Nuestras redes sociales:</h4>
-    
-            <div class="row">
-                <a class="col-4" href="https://www.instagram.com/" target="_blank"><img src="./img/icons8-instagram.svg"
-                        alt=""></a>
-                <a class="col-4" href="https://www.facebook.com/" target="_blank"><img src="./img/icons8-facebook.svg"
-                        alt=""></a>
-                <a class="col-4" href="https://www.whatsapp.com/" target="_blank"><img src="./img/icons8-whatsapp.svg"
-                        alt=""></a>
+    <footer class=" bg-dark pt-2 pb-1 container-fluid">
+
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-12 col-md-6 col-lg-3 mx-auto mt-3">
+                    <h4 class="text-uppercase mb-4 fw-bold text-white ">Forest Cabins</h4>
+                    <p class="text-white text-start">Somos un complejo de cabañas ubicado en la ladera de la Reserva Yellowstone. Vas a encontrar intimidad, buenos servicios y calidez en la atención.</p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3  col-lg-2 mx-auto mt-3">
+                    <h4 class="text-uppercase mb-4 fw-bold text-white text-start">contacto</h4>
+
+                    <p class="text-start footer__p">
+                        <a href="./pages/contacto.html#reserva" class=" footer__link">Reservas</a>
+                    </p>
+                    <p class="text-start footer__p">
+                        <a href="./pages/contacto.html#ubicacion" class=" footer__link">Ubicación</a>
+                    </p>
+                    <p class="text-start footer__p">
+                        <a href="./pages/contacto.html#Faqs" class=" footer__link">Preguntas</a>
+                    </p>
+                    <p class="text-start footer__p">
+                        <a href="./pages/contacto.html#Contact-us" class=" footer__link">Formulario</a>
+                    </p>
+
+                </div>
+                <div class="col-12  col-sm-6 col-md-3 col-lg-2  mx-auto mt-3">
+                    <h4 class="text-uppercase mb-4 fw-bold text-white text-start">Actividades</h4>
+                    
+                    <p class="text-start footer__p">
+                        <a href="./pages/queHacer.html#soleado" class=" footer__link">Días Soleados</a>
+                    </p>
+                    <p class="text-start footer__p">
+                        <a href="./pages/queHacer.html#nublado" class=" footer__link">Días Lluviosos</a>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 mx-auto mt-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 class="text-uppercase mb-4 fw-bold text-white">Nuestras redes sociales:</h4>
+                        <div class="row">
+                            <a class="col-4" href="https://www.instagram.com/" target="_blank"><img src="../img/icons8-instagram.svg"
+                                    alt=""></a>
+                            <a class="col-4" href="https://www.facebook.com/" target="_blank"><img src="../img/icons8-facebook.svg"
+                                    alt=""></a>
+                            <a class="col-4" href="https://www.whatsapp.com/" target="_blank"><img src="../img/icons8-whatsapp.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <h5 class="fs-6 text-white">2022 Todos los derechos reservados ---- Powered by <a class="text-muted" href="#">Fercho Solutions</a></h5>
+
+            <h5 class="fs-6 text-white mt-4">2022 Todos los derechos reservados ---- Powered by <a class="footer__link" href="#">Fercho Solutions</a></h5>
+        
         </div>
+
     
     </footer>
 
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script type="text/javascript">
+        let progress= document.getElementById('progressBar');
+        let totalHeight= document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight= (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + '%';
+        }
+    </script>
 
 
    
